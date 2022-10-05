@@ -1,22 +1,8 @@
-﻿using System.Text;
-
-namespace SOLID
+﻿namespace SOLID
 {
-    public class Program
+    public interface IScanner
     {
-        public static void Main(string[] args) 
-        {
-
-            var impressoraMatricial = new LX300();
-
-            impressoraMatricial.Imprimir("Página teste");
-
-            var meuArray = new[] { 1, 2, 3, 4 };
-
-            meuArray.GetEnumerator();
-
-            
-        }
+        void Digitaliza();
     }
 
 

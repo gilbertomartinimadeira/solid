@@ -1,21 +1,20 @@
-﻿using System.Text;
-
-namespace SOLID
+﻿namespace SOLID
 {
-    public class Program
+    public class Multifuncional : IMultifuncional
     {
-        public static void Main(string[] args) 
+        public void Digitalizacao()
         {
+            throw new System.NotImplementedException();
+        }
 
-            var impressoraMatricial = new LX300();
+        public void EnviaFax()
+        {
+            throw new System.NotImplementedException();
+        }
 
-            impressoraMatricial.Imprimir("Página teste");
-
-            var meuArray = new[] { 1, 2, 3, 4 };
-
-            meuArray.GetEnumerator();
-
-            
+        public void Imprimir(string texto)
+        {
+            throw new System.NotImplementedException();
         }
     }
 

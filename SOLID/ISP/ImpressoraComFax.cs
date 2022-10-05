@@ -1,21 +1,18 @@
-﻿using System.Text;
-
-namespace SOLID
+﻿namespace SOLID
 {
-    public class Program
+    public class ImpressoraComFax : IImpressora, IFax
     {
-        public static void Main(string[] args) 
+        public byte[] buffer { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+        public int ContadorDePaginas { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
+        public void EnviaFax()
         {
+            throw new System.NotImplementedException();
+        }
 
-            var impressoraMatricial = new LX300();
-
-            impressoraMatricial.Imprimir("Página teste");
-
-            var meuArray = new[] { 1, 2, 3, 4 };
-
-            meuArray.GetEnumerator();
-
-            
+        public void Imprimir(string texto)
+        {
+            //throw new System.NotImplementedException();
         }
     }
 

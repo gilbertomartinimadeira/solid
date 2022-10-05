@@ -1,22 +1,9 @@
-﻿using System.Text;
-
-namespace SOLID
+﻿namespace SOLID
 {
-    public class Program
+    public abstract class Fax
     {
-        public static void Main(string[] args) 
-        {
-
-            var impressoraMatricial = new LX300();
-
-            impressoraMatricial.Imprimir("Página teste");
-
-            var meuArray = new[] { 1, 2, 3, 4 };
-
-            meuArray.GetEnumerator();
-
-            
-        }
+        public string NumSerie { get; set; }
+        public abstract void EnviaFax();
     }
 
 

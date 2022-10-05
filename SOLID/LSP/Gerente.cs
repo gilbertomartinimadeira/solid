@@ -28,4 +28,16 @@ namespace SOLID.LSP
         //T RetornaAlgo();
 
     }
+
+
+
+
+    public class Produto 
+    {
+        public int id { get; set; } 
+        public string Descricao { get; set; }
+        public decimal Preco { get; set; }
+
+                
+    }
 }

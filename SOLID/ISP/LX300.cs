@@ -1,20 +1,12 @@
-﻿using System.Text;
-
-namespace SOLID
+﻿namespace SOLID
 {
-    public class Program
+    public class LX300 : Impressora
     {
-        public static void Main(string[] args) 
+        public byte[] buffer{ get; set; }
+        public override void Imprimir(string texto)
         {
 
-            var impressoraMatricial = new LX300();
-
-            impressoraMatricial.Imprimir("Página teste");
-
-            var meuArray = new[] { 1, 2, 3, 4 };
-
-            meuArray.GetEnumerator();
-
+            System.Console.WriteLine($"Imprimindo {texto}");
             
         }
     }
